@@ -45,7 +45,8 @@ ul {
 }
 
 li {
-	margin: 8px;
+    margin: 8px;
+    padding: 8px
 }
 
 a {
@@ -227,7 +228,7 @@ h3 {
 
 .picRight {
     border-radius: 40%;
-    width: 550px;
+    width: 80%;
     height: 500px;
     padding: 60px;
     align-self: center;
@@ -252,6 +253,15 @@ h3 {
     margin-bottom: 80px;
 }
 
+#testimonial {
+    color: white;
+    font-size: 25px
+}
+
+#testimonial:hover {
+    color: white;
+    font-size: 26px;
+}
 
 /* KEYFRAMES */
 
