@@ -1,64 +1,67 @@
 /*
 Colors:
-
-Text: 1A1A1A
-Green: #00B172
+Blue: rgb(45, 197, 250)
 White: #FFF
-
 */
 
 html {
-    font-family: 'Inconsolata';
-    ms-text-size-adjust: 100%;
-    webkit-text-size-adjust: 100%;
-    letter-spacing: .10em;
+	font-family: 'Inconsolata';
+	ms-text-size-adjust: 100%;
+	webkit-text-size-adjust: 100%;
+	letter-spacing: .10em;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 section {
-    display: block;
-}
-
-.headerBar {
-    padding: 0px 15px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	display: block;
 }
 
 .ironGoatLogo {
-    width: 200px;
-    height: 100%;
-    animation: rotation 10s infinite linear;
+	width: 200px;
+	height: 100%;
+	animation: rotation 10s infinite linear;
 }
 
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+.topdiv {
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	padding: 0px 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+li {
+	margin: 8px;
+}
 
 a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    font-size: 20px;
-    text-shadow: 1px 1px rgb(45, 197, 250);
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+	text-shadow: 1px 1px rgb(45, 197, 250);
 }
 
 a:hover {
     color: rgb(45, 197, 250);
-    font-size:25px;
+    font-size:21px;
 }
 
-.partyPhoto {
+.topSection {
     background-image: url(/images/goatbg.png);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -71,66 +74,94 @@ a:hover {
     justify-content: center;
 }
 
+.topContent {
+    margin: 0px;
+    padding: 0px;
+}
+
+.topContent p {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.884);
+}
 
 h1 {
+    padding-left: 10%;
     color: rgb(45, 197, 250);
-    text-align: center;
     font-size: 75px;
-    margin-top: 0;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.502);
     overflow: hidden;    
     white-space: nowrap;
     border-right: .15em solid rgb(45, 197, 250);
-    margin: 0 auto;
     letter-spacing: .15em;
     animation: 
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(45, 197, 250) }
-  } 
-
-.partyPhoto p {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    margin-left: 250px;
-    margin-right: 250px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.842);
-}
-
 .midSection {
-    width: 100%;
+    margin-bottom: 50px;
 }
 
-.midSection h2 {
+
+.goaters > h2 {
     text-align: center;
-    padding-top: 10px;
-    font-size: 30px;
-    font-weight: 1000px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-hr {
+.goaters h2:hover {
+    color: rgb(45, 197, 250);
+    font-size: 41px;
+    text-shadow: 3px 3pxrgba(0, 0, 0, 0.502);
+}
+
+.goatersUnderline {
     border-bottom: 4px solid rgb(45, 197, 250);
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
 }
 
-.insideMidSection img {
+.goatersPics {
+    margin-top: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.goatersPics img {
     width: 320px;
     height: 320px;
     border-radius: 50%;
 }
 
+.juanMain h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.nikoMain h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.stefanMain h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(45, 197, 250);
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-shadow: 1px 1px  rgba(0, 0, 0, 0.502);
+}
 
 .juan:hover {
     content: url(/images/juangoat.jpg);
@@ -182,105 +213,72 @@ hr {
     font-size: 25px;
 }
 
-.insideMidSection {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black;
-    border-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.millionSongs {
-    border: 2px solid black;
-    border-style: none;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    align-items: center;
-    height: 228px;
-    width: 281px;
-}
-
-.hdMusic {
-    border: 2px solid black;
-    border-style: none;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    align-items: center;
-    height: 228px;
-    width: 281px;
-}
-
-.stream {
-    border: 2px solid black;
-    border-style: none;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    align-items: center;
-    height: 228px;
-    width: 281px;
-}
-
-h3 {
-    color: rgb(45, 197, 250);
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.insideMidSection p {
-    font-size: 20px;
-    margin: 20px;
-    color: rgb(56, 55, 55);
-}
-
-.outsideMidSection {
-    margin-bottom: 50px;
-}
-
-
-
-.bottomSection {
+.lowSection {
     color: white;
     background-color: rgb(45, 197, 250);
     display: flex;
     justify-content: space-evenly;
 }
 
-.whitebg {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.bottomSection h2 {
+.lowSection h2 {
     padding: 70px;
-    text-decoration: underline;
     font-size: 30px;
 }
 
-
-.gifimage {
+.picRight {
     border-radius: 40%;
-    width: 600px;
-    height: 700px;
+    width: 550px;
+    height: 500px;
     padding: 60px;
     align-self: center;
+    box-shadow: 5px 1px rgba(0, 0, 0, 0.336);
 }
 
-.infoToLeft {
-    border: 3px solid black;
-    border-style: none;
-}
-
-.infoToLeft h4, p {
+.infoLeft h4, p {
     padding-left: 70px;
     font-size: 20px;
     font-weight: 100;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.884)
 }
 
-/* TEXT ATTEMPT */
+.infoLeft h2 {
+    padding-left: 70px;
+    font-size: 35px;
+    font-weight: 100;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.884)
+}
 
+.infoLeft p {
+    margin-bottom: 80px;
+}
+
+
+/* KEYFRAMES */
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: rgb(45, 197, 250);
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
