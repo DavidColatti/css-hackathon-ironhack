@@ -67,4 +67,19 @@
         <img src="/images/goatfriends.jpg" alt="Picture" class="picRight">
     </section>
         </body>
+        <script>
+// Generates a random color in hexadecimal (ie. #62b9cc)
+function generateRandomColor() {
+  return '#'+Math.floor(Math.random()*16777215).toString(16);
+}
+
+function changeColor() {
+  let discoBoxes = document.getElementsByClassName("whyStudy");
+  for (i=0; i<discoBoxes.length; i++) {
+    discoBoxes[i].style.color = generateRandomColor();
+  }
+}
+
+setInterval(changeColor, 300)
+        </script>
 </html>
